@@ -1,0 +1,32 @@
+ul li {
+  margin-bottom: 3px;
+  position: relative;
+}
+.red-squer{
+  position: relative;
+  padding-left: 33px;
+}
+.red-squer:before{
+ /*если размер иконки неизвестен*/
+  /*content:url(http://placekitten.com/50/50);*/
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background-size: contain;
+  height: 10px;
+  width: 10px;
+  background: red;
+  transform: translate( 0,-50%);
+}
+.red-squer:hover:before{
+  content: url(envelope.svg);
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  background-size: contain;
+  height: 10px;
+  width: 10px;
+  transform: translate( 0,-50%);
+}
